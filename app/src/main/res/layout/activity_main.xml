@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3B73A"
+    android:backgroundTint="#F6DD01">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="375dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="115dp"
+        android:text="Welcome"
+        android:textColor="#FF0303"
+        android:textSize="34sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/welcome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:backgroundTint="#B3B73A"
+        android:hint="Enter your name"
+        android:paddingLeft="20dp"
+        android:textColor="#FF0303"
+        android:textColorHint="#BC1717">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="377dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="#B3B73A"
+        android:backgroundTint="#B3B73A"
+        android:hint="Enter your age"
+        android:paddingLeft="20dp"
+        android:textColorHint="#BC1717">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/radio"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="#B3B73A"
+        android:backgroundTint="#B3B73A"
+        android:hint="Enter your phone no."
+        android:paddingLeft="20dp"
+        android:textColor="#FF0303"
+        android:textColorHint="#BC1717">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="#B3B73A"
+        android:backgroundTint="#B3B73A"
+        android:hint="Enter your email address"
+        android:paddingLeft="20dp"
+        android:textColor="#FF0303"
+        android:textColorHint="#BC1717">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:onClick="Showtoast"
+        android:layout_marginRight="40dp"
+        android:background="#F42E2E"
+        android:text="Submit"
+        android:textColor="#FF0303">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/age"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Choose your gender"
+        android:textColor="#FF0303"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="250dp"
+        android:paddingLeft="20dp">
+
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:layout_marginTop="10dp"
+            android:onClick="showToast"
+            android:layout_toRightOf="@id/gender"
+            android:text="Male"
+            android:textColor="#FF0303">
+
+        </RadioButton>
+
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age"
+            android:onClick="showtoast"
+            android:layout_marginTop="10dp"
+            android:text="Female"
+            android:textColor="#FF0303">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="20dp"
+        android:onClick="ShowToast"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:text="Remember Me"
+        android:textColor="#FF0303"
+        android:textColorHint="#FF0303" />
+
+
+</RelativeLayout>
